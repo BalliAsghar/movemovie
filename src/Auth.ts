@@ -64,7 +64,7 @@ async function refreshTokens(refreshToken: string): Promise<OAuth.TokenResponse>
 }
 
 export async function runScript(): Promise<void> {
-  const scriptID: string = "AKfycbxqNcerp34Fs64Hnpof8PNw-MS_as73jBI54VZKOJHMdDK5f4K6aeMGIsnBCvVJlIWk";
+  const scriptID: string = "AKfycbxRzoBBmm6zHFvWiZFWfPd9nj3mYtliS2h8Q8Gfesp_VLcR6rBXgqwddYb_B6oHXyYq";
 
   const tokenSet = await client.getTokens();
 
@@ -82,8 +82,6 @@ export async function runScript(): Promise<void> {
     console.error("run script error:", await response.text());
     throw new Error(response.statusText);
   }
-
-  await response.json();
 
   return;
 }

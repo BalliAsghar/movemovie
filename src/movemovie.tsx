@@ -8,5 +8,5 @@ export default async function Command() {
   });
   await runScript();
   toast.style = Toast.Style.Success;
-  toast.title = "Movie Moved, if it was there";
+  toast.title = "Movie Moved, if there was one";
 }
